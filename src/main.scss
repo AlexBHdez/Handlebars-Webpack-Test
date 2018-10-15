@@ -1,13 +1,12 @@
 // CUSTOM SCSS
 @import "./scss/custom";
-
 // BOOTSTRAP
-// @import "~bootstrap/dist/css/bootstrap.css";
 @import "node_modules/bootstrap/scss/bootstrap";
-
 // COMPONENTS
 @import './components/nav/nav';
 @import './components/banner/banner';
+@import './components/product/product.scss';
+@import './components/tabs/tabs';
 
 body, html {
     padding: 0;
