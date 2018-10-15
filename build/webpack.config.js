@@ -104,7 +104,7 @@ module.exports = {
           }),  
          
         new HtmlWebpackPlugin({
-            title: 'My awesome service',
+            title: 'ALTRAN Technical skill test',
             template: './src/index.handlebars',
             minify: !isDevelopment && {
                 html5: true,
