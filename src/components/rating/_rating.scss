@@ -1,0 +1,9 @@
+@import '../../scss/custom';
+
+#rating {
+  text-align: right;
+
+  i {
+    color: $color-primary;
+  }
+}

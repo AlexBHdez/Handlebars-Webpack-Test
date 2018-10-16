@@ -5,8 +5,9 @@
 // COMPONENTS
 @import './components/nav/nav';
 @import './components/banner/banner';
-@import './components/product/product.scss';
+@import './components/product/product';
 @import './components/tabs/tabs';
+@import './components/rating/rating';
 
 body, html {
     padding: 0;
