@@ -92,6 +92,10 @@ module.exports = {
         ] 
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         /** Since Webpack 4 */
         new webpack.LoaderOptionsPlugin({
             options: {
