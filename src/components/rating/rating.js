@@ -8,4 +8,3 @@ $('.star').on('click', function() {
   $(this).children().removeClass('far');
   $(this).children().addClass('fas');
 })
-
