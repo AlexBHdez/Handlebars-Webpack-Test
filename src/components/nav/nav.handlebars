@@ -1,11 +1,14 @@
 <nav class="navigationWrapper d-flex justify-content-between py-5">
   <nav class="btn-group btn-breadcrumb">
-    <a href="#" class="btn btn-primary">Home</a>
+    {{!-- <a href="#" class="btn btn-primary">Home</a>
     <a href="#" class="btn btn-primary d-sm-inline d-md-none">...</a>
     <a href="#" class="btn btn-primary d-none d-md-inline">Level 1</a>
     <a href="#" class="btn btn-primary d-none d-md-inline">Level 2</a>
     <a href="#" class="btn btn-primary d-none d-md-inline">Level 3</a>
-    <a href="#" class="btn btn-primary">Last</a>
+    <a href="#" class="btn btn-primary">Last</a> --}}
+    {{#each navItems}}
+      <a href="{{url}}" class="btn btn-primary d-none d-md-inline">{{text}}</a>
+    {{/each}}
   </nav>
   <div class="register">
     <a href="#">Login</a>

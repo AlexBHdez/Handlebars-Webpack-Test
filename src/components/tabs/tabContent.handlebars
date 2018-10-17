@@ -1,0 +1,30 @@
+<div class="tab-content" id="products-tabContent">
+  <div class="tab-pane fade" id="tab-home" role="tabpanel" aria-labelledby="tab-home-tab">Home</div>
+
+  <div class="tab-pane fade show active" id="tab-products" role="tabpanel" aria-labelledby="tab-products">
+
+    <div class="row">
+      <div class="col-12 col-sm-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          {{#each tabPills}}
+          <a href="{{href}}" class="nav-link {{active}}" id="v-pills-apps-tab" data-toggle="pill" role="tab"
+            aria-controls="{{ariaControls}}" aria-selected="{{ariaSelected}}">{{text}}</a>
+          {{/each}}
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-8 offset-md-1 pt-3">
+        <div class="tab-content" id="v-pills-tabContent">
+          {{#each pillsContent}}
+          <p class="tab-pane fade {{active}}" id="{{contentFor}}" role="tabpanel" aria-labelledby="{{contentFor}}">
+            {{content}}
+          </p>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="tab-about" role="tabpanel" aria-labelledby="tab-about">About</div>
+  <div class="tab-pane fade" id="tab-contact" role="tabpanel" aria-labelledby="tab-contact">Contact</div>
+</div>
