@@ -12,16 +12,24 @@
 
 <body class="container">
     <header>
-        {{> components/nav/nav }}
-        {{> components/banner/banner }} 
+        <div id="nav">
+            {{> components/nav/nav }}
+        </div>
+        <div id="banner">
+            {{> components/banner/banner }} 
+        </div>
     </header>
 
     <main>
-        {{> components/product/product }}
-        {{> components/tabs/tabs }}
+        <section id="product">
+            {{> components/product/product }}
+        </section>
+        <section id="tabs">
+            {{> components/tabs/tabs }}
+        </section>
     </main>
 
-    <aside>
+    <aside id="rating">
         {{> components/rating/rating }}
     </aside>
     

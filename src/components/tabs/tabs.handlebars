@@ -1,81 +1,22 @@
-<section id="tabs">
-  <div class="row">
-    <div class="col-12 col-md-9">
-      <ul class="nav nav-tabs" id="products-tab" role="tablist">
+<div class="row">
+  <div class="col-12 col-md-9">
+    <ul class="nav nav-tabs" id="products-tab" role="tablist">
+
+      {{#each tab}}
         <li class="nav-item">
-          <a class="nav-link px-1 px-sm-3" id="home-tab" data-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home"
-            aria-selected="true">Home</a>
+          <a class="nav-link px-1 px-sm-3 {{active}}" id="home-tab" data-toggle="tab" href="{{href}}" role="tab" aria-controls="{{ariaControls}}"
+            aria-selected="true">{{text}}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active px-1 px-sm-3" id="product-tab" data-toggle="tab" href="#tab-products" role="tab" aria-controls="tab-products"
-            aria-selected="false">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-1 px-sm-3" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="tab-about"
-            aria-selected="false">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-1 px-sm-3" id="contact-tab" data-toggle="tab" href="#tab-contact" role="tab" aria-controls="tab-contact"
-            aria-selected="false">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-12 col-md-3">
-      <form class="form-inline my-2">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 d-none" type="submit">Search</button>
-      </form>
-    </div>
+      {{/each}}
+
+    </ul>
   </div>
-  <div class="tab-content" id="products-tabContent">
-    <div class="tab-pane fade" id="tab-home" role="tabpanel" aria-labelledby="tab-home-tab">Home</div>
-
-    <div class="tab-pane fade show active" id="tab-products" role="tabpanel" aria-labelledby="tab-products">
-
-      <div class="row">
-        <div class="col-12 col-sm-3">
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a href="#v-pills-apps" class="nav-link" id="v-pills-apps-tab" data-toggle="pill" role="tab" aria-controls="v-pills-apps" aria-selected="false">Apps</a>
-            <a href="#v-pills-games" class="nav-link" id="v-pills-games-tab" data-toggle="pill" role="tab" aria-controls="v-pills-games" aria-selected="false">Games</a>
-            <a href="#v-pills-movies" class="nav-link active" id="v-pills-movies-tab" data-toggle="pill" role="tab" aria-controls="v-pills-movies" aria-selected="true">Movies</a>
-            <a href="#v-pills-books" class="nav-link" id="v-pills-books-tab" data-toggle="pill" role="tab" aria-controls="v-pills-books" aria-selected="false">Books</a>
-            <a href="#v-pills-newspapers" class="nav-link" id="v-pills-newspapers-tab" data-toggle="pill" role="tab" aria-controls="v-pills-newspapers" aria-selected="false">Newspapers</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-8 offset-md-1 pt-3">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade" id="v-pills-apps" role="tabpanel" aria-labelledby="v-pills-apps">
-              Contenido de apps
-            </div>
-            <div class="tab-pane fade" id="v-pills-games" role="tabpanel" aria-labelledby="v-pills-games">
-              Contenido de games
-            </div>
-            <p class="tab-pane fade show active" id="v-pills-movies" role="tabpanel" aria-labelledby="v-pills-movies">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis mi tortor, et condimentum nisi pretium quis.
-              Cras volutpat nisl at ultricies pretium. Aliquam fringilla porta mattis. Nulla sollicitudin purus et justo blandit, a
-              ornare ipsum gravida. Vestibulum quis tortor nibh. Nulla tempus tempor malesuada. Phasellus sodales volutpat metus, ac
-              sodales urna fermentum sit amet. Mauris varius pellentesque erat, ac ullamcorper eros accumsan tempus. Quisque commodo
-              nisi eros, eget tristique magna interdum quis. Praesent vel congue tortor. Duis eget dictum nulla. Mauris sodales
-              tellus tincidunt mauris hendrerit, vitae posuere ipsum accumsan. Aliquam vel malesuada lectus, vel ultrices libero. Sed
-              ac sodales arcu. Nulla pretium tellus ex. Cras massa orci, semper quis blandit tincidunt, scelerisque nec nibh. Nunc
-              aliquet enim nec magna vestibulum, sit amet condimentum mauris rhoncus. Proin vel mauris vel ipsum viverra consequat.
-              Morbi accumsan neque eu sem scelerisque iaculis. Aliquam erat volutpat. Maecenas nec nibh fringilla, dictum justo ut,
-              facilisis orci. Maecenas eget molestie augue. Quisque pellentesque finibus neque quis faucibus. Etiam lacinia odio eu
-              orci elementum dictum. Suspendisse eu nisi lectus.
-            </p>
-            <div class="tab-pane fade" id="v-pills-books" role="tabpanel" aria-labelledby="v-pills-books">
-              Contenido de books
-            </div>
-            <div class="tab-pane fade" id="v-pills-newspapers" role="tabpanel" aria-labelledby="v-pills-newspapers">
-              Contenido de newspapers
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="tab-pane fade" id="tab-about" role="tabpanel" aria-labelledby="tab-about">About</div>
-    <div class="tab-pane fade" id="tab-contact" role="tabpanel" aria-labelledby="tab-contact">Contact</div>
+  <div class="col-12 col-md-3">
+    <form class="form-inline my-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 d-none" type="submit">Search</button>
+    </form>
   </div>
+</div>
 
-</section>
+{{> ./tabContent}}
