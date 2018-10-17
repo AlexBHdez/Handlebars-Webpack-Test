@@ -9,22 +9,32 @@ $(document).ready(function() {
       {
         text: 'Home',
         url: '#',
+        responsive: ''
+      },
+      {
+        text: '...',
+        url: '#',
+        responsive: 'd-sm-inline d-md-none'
       },
       {
         text: 'Level 1',
-        url: '#'
+        url: '#',
+        responsive: 'd-none d-md-inline'
       },
       {
         text: 'Level 2',
-        url: '#'
+        url: '#',
+        responsive: 'd-none d-md-inline'
       },
       {
         text: 'Level 3',
-        url: '#'
+        url: '#',
+        responsive: 'd-none d-md-inline'
       },
       {
         text: 'Last',
-        url: '#'
+        url: '#',
+        responsive: ''
       },
     ]
   }))
