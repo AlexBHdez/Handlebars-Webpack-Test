@@ -22,7 +22,10 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.handlebars$/, loader: "handlebars-loader" },
+            { 
+                test: /\.handlebars$/,
+                loader: "handlebars-loader",
+            },
             {
                 test: /\.(scss|css)$/,
                 use: [
