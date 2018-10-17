@@ -4,3 +4,8 @@
     width: 100% !important;
   }
 }
+
+#v-pills-movies {
+  max-height: 300px;
+  overflow-y: scroll;
+}
